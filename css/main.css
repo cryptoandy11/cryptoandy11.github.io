@@ -142,6 +142,29 @@ ul {
 .fade {
   transition: opacity 0.4s linear;
 }
+.icon {
+  height: 22px;
+  width: 22px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.icon svg {
+  height: 100%;
+  width: 100%;
+}
+.medium {
+  background-image: url('../img/medium.png');
+}
+.zerion {
+  background-image: url('../img/zerion.png');
+}
+.poc {
+  background-image: url('../img/poc.png');
+}
 @media screen and (prefers-reduced-motion: reduce) {
   .fade {
     transition: none;
@@ -531,7 +554,7 @@ ul {
     display: block;
     line-height: 21px;
     color: #fff;
-    font-size: 28px;
+    font-size: 26px;
     transition: 0.4s ease;
     margin-right: auto;
     margin-left: 15px;
@@ -540,6 +563,9 @@ ul {
   }
   .header--active .header__tagline {
     color: #505050;
+  }
+  .container{
+    min-width: 90%;
   }
 }
 @media (min-width: 1200px) {
@@ -675,7 +701,7 @@ ul {
   color: #fff;
   font-family: 'brand', sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 34px;
   margin-bottom: 0;
 }
 .home__text {
@@ -818,7 +844,7 @@ ul {
     text-align: center;
   }
   .home__text {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0 0 35px;
     text-align: center;
   }
@@ -853,10 +879,14 @@ ul {
   .home__sales {
     padding: 30px;
   }
+  
+  .header__signin {
+    font-size: 13px;
+  }
 }
 @media (min-width: 768px) {
   .home__title {
-    font-size: 48px;
+    font-size: 34px;
     text-align: left;
   }
   .home__text {
